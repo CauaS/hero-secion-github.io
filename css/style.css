@@ -35,21 +35,13 @@ body {
 }
 
 /* **************** Typography Setup */
-body, h1, h2, h3, h4, p {
-  margin-block-end: 0;
-}
-
-h1, h2, h3, h4 {
-  line-height: 1.1;
-}
-
-h1 {
+.hero-card-info > h1 {
   font-size: 3.75rem;
   line-height: 3.75rem;
   color: var(--primaryColor);
 }
 
-p {
+.hero-card-info > p {
   font-size: 1.125rem;
   line-height: 1.75rem;
   color: var(--secondayColor);
@@ -125,14 +117,14 @@ picture > img {
 .content-info-actions > .hero-card-info {
   display: flex;
   flex-direction: column;
-  gap: 1em
+  gap: 1em;
 }
 
 /* Left side of the card (actions link)*/
 .content-info-actions > .hero-card-actions {
   display: flex;
   flex-direction: row;
-  gap: 2em
+  gap: 2em;
 }
 
 .hero-card-actions > .primary-learn-more {
@@ -163,14 +155,14 @@ picture > img {
 }
 
 /* Media Queries to add flexibility on layout*/
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1440px){
   .container {
     max-width: 1280px;
   }
 }
 @media screen and (max-width: 768px){
   /* Adjust the sizes of text to better layout*/
-  h1 {
+  .hero-card-info > h1 {
     font-size: 3rem;
     line-height: 2.50rem;
   }
@@ -193,11 +185,11 @@ picture > img {
 }
 @media screen and (max-width: 375px){
   /* Adjust the sizes of text to better layout*/
-  h1 {
+  .hero-card-info > h1 {
     font-size: 2.25rem;
     line-height: 2.50rem;
   }
-  p {
+  .hero-card-info > p {
     font-size: 1.10rem;
     line-height: 1.75rem;
     letter-spacing: 0;
